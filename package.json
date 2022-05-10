@@ -1,0 +1,39 @@
+{
+  "name": "js-handwritten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzye/js-handwritten.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzye/js-handwritten/issues"
+  },
+  "homepage": "https://github.com/dzye/js-handwritten#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "vitest": "^0.12.3"
+  },
+  "lint-staged": {
+    "package/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}
