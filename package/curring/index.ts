@@ -1,5 +1,5 @@
 const curring = function (fn) {
-  let curried = function (...args) {
+  const curried = function (...args) {
     if (args.length >= fn.length) {
       return fn.apply(this, args)
     } else {
