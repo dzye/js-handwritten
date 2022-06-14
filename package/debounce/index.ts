@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-types
 const debounce = function (fn, delay): any {
   let timer
   return (...args) => {

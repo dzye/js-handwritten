@@ -6,6 +6,9 @@ test('debounce', () => {
   const debounced = debounce(fn, 1000)
   debounced()
   debounced()
+  setTimeout(() => {
+    debounced()
+  }, 1500)
   vi.runAllTimers()
-  expect(fn).toHaveReturnedTimes(1)
+  expect(fn).toHaveReturnedTimes(2)
 })
